@@ -41,10 +41,10 @@ let M = 100
 ###
 ####
 #####*/
-
-for(let i = 1; i <= 5; i++){
+let y = 5
+for(let i = 1; i <= y; i++){
      for(let j = 1;j <= i; j++)
-         document.write('*');
+         document.write('#');
          document.write('<br />');
 }
 /*4.Исписати Марио пирамиду одређене висине:
@@ -55,8 +55,14 @@ for(let i = 1; i <= 5; i++){
   ###
  ####   
 #####*/
-
-
+let row = 5
+for (let i = 0; i < row; i++) {
+    let write = '';
+    for (let j = 1; j < row- i; j++) write += '  ';
+    for (let k = 0; k <= i; k++) write += ' #';
+    console.log(write);  
+} 
+console.log('-------------------------------');
 /*5.Исписати Марио пирамиду одређене висине:
 За n = 5
 
@@ -64,4 +70,15 @@ for(let i = 1; i <= 5; i++){
    ## ##
   ### ###
  #### ####  
-##### #####*/
+##### #####
+*/
+let rows = 5
+for (let i = 0; i < rows; i++) {
+    let write = '';
+    for (let j = 1; j < rows- i; j++) write += '  ';
+    for (let k = 0; k <= i; k++) write += ' #';
+    for (let k = 0; k <= i; k++) write += ' #';
+   
+    console.log(write);  
+}
+
