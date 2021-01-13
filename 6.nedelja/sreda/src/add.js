@@ -3,14 +3,14 @@ import service from './service.js';
 function showItem(){ 
     let itemContainer = document.querySelector('#container');
     service.data.forEach(element => {
-        let item = document.createElement('p');
-            let spanDecription = document.createElement('span');
-                let description = document.createElement('span');
-            let spanCheckbox = document.createElement('span');
-                let checkbox = document.createElement('input');
-                checkbox.type = 'checkbox';
-            let spanDelete = document.createElement('span');
-                let btnDelete = document.createElement('button');
+    let item = document.createElement('p');
+    let spanDecription = document.createElement('span');
+    let description = document.createElement('span');
+    let spanCheckbox = document.createElement('span');
+    let checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+    let spanDelete = document.createElement('span');
+    let btnDelete = document.createElement('button');
 
         spanDecription.className = 'span-description';
         spanCheckbox.className = 'span-checkbok';

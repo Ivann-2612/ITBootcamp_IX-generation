@@ -1,4 +1,30 @@
 import service from './service.js'
-import input from './input.js';
 import add from './add.js';
+
+
+const inputDesc = document.querySelector('#input-desc');
+const inputDone = document.querySelector('#input-done');
+const btn = document.querySelector('#btn-submit');
+let container = document.querySelector('#container');
+
+
+const makeInput = (inputDesc, inputDone) => {
+    let obj = {
+        desc: inputDesc.value,
+        done: inputDone.checked
+    }
+    return obj;
+};
 add.showItem();
+btn.addEventListener('click', (event) => {
+    event.preventDefault();
+    service.add(makeInput(inputDesc, inputDone))
+    container.innerHTML = '';
+    add.showItem();
+})
+export default { 
+    makeInput,
+    inputDesc,
+    inputDone,
+    btn
+}
