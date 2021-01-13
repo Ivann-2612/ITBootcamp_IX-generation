@@ -1,2 +1,0 @@
-# ITBootcamp_IX-generation
-
