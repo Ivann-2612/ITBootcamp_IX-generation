@@ -65,6 +65,15 @@ h1 {
     float: right;
     border-radius: 5px;
 }
+.delete {
+    padding: 1px;
+    padding: 1px 8px;
+    border-radius: 5px;
+}
+.delete:hover {
+    background-color: red;
+    color: #f1f5f8;
+}
 #btn-submit:hover {
     background-color: blue;
     color: white;

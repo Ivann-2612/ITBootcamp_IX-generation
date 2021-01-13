@@ -15,13 +15,16 @@ const makeInput = (inputDesc, inputDone) => {
     }
     return obj;
 };
-add.showItem();
+
 btn.addEventListener('click', (event) => {
     event.preventDefault();
     service.add(makeInput(inputDesc, inputDone))
     container.innerHTML = '';
     add.showItem();
 })
+
+add.showItem();
+
 export default { 
     makeInput,
     inputDesc,

@@ -45,6 +45,7 @@ function showItem(){
         })
     });
 }
+
 export default{
     showItem
 }
