@@ -1,0 +1,59 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: "Press Start 2P", cursive;
+}
+
+.span {
+  filter: drop-shadow(0 0 0.65rem white);
+  margin-left: 5px;
+}
+.app {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.app1 {
+  background-color: #282c34;
+  margin: 0;
+}
+.ships {
+  background-color: #00bcf2;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  max-width: 350px;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 0.2rem white);
+}
+.imgAll {
+  width: 200px;
+  height: 150px;
+  margin-top: 5px;
+}
+.ship-name {
+  color: #e81224;
+  font-weight: 500;
+}
+h1 {
+  letter-spacing: 3px;
+  color: black;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+.year {
+  color: #f7630c;
+}
+.select {
+  margin-top: 10px;
+  padding: 5px 15px;
+  background-color: #00bcf2;
+  font-size: 20px;
+  border: none;
+  color: white;
+}
